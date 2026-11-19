@@ -27,7 +27,8 @@
 ## Progress log
 
 | Date | What I did | Next step | Lecturer feedback |
-|---|---|---|---|
+|---|---|---|
+| 2026-11-19 | Added CSV cleaner, automatic tests, and usage instructions. | Run tests and try a real CSV. | — |
 
 ## Run the cleaning program
 
