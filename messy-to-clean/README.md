@@ -29,6 +29,7 @@
 | Date | What I did | Next step | Lecturer feedback |
 |---|---|---|
 | 2026-11-19 | Added CSV cleaner, automatic tests, and usage instructions. | Run tests and try a real CSV. | — |
+| 2026-11-19 | Updated AGENTS.md with the nine project rules. | Follow these rules in future work. | — |
 
 ## Run the cleaning program
 
