@@ -34,6 +34,9 @@ def clean_csv(source, destination):
     source, destination = Path(source), Path(destination)
     if source.resolve() == destination.resolve():
         raise ValueError("Input and output paths must be different.")
+    raw = (ROOT / "data" / "raw").resolve()
+    if destination.resolve() == raw or raw in destination.resolve().parents:
+        raise ValueError("Do not save output inside data/raw/.")
     if not source.is_file():
         raise FileNotFoundError(f"File not found: {source}")
     header, rows, count = clean_rows(source.read_text(encoding="utf-8-sig"))
