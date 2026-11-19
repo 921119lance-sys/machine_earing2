@@ -28,3 +28,15 @@
 
 | Date | What I did | Next step | Lecturer feedback |
 |---|---|---|---|
+
+## Run the cleaning program
+
+From the `messy-to-clean/` folder, run:
+
+```bash
+python src/clean_data.py --demo
+python -m unittest discover -s src -p "test_*.py" -v
+python src/clean_data.py data/raw/input.csv data/processed/cleaned.csv
+```
+
+The demo creates `data/processed/demo_cleaned.csv`. Input files stay unchanged. The cleaner trims spaces, standardizes column names, replaces common missing markers with blanks, and removes duplicate or empty rows. It does not guess missing values or change number formats.
